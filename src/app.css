@@ -1,0 +1,121 @@
+.app {
+  text-align: left;
+}
+
+.app-header {
+  text-align: center;
+  background-color: #222;
+  height: 30px;
+  padding: 15px;
+  color: white;
+}
+
+.app-title {
+  font-size: 1.5em;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-sidebar {
+  flex: 1 0 0;
+  min-width: 250px;
+  max-width: 250px;
+  padding-left: 10px;
+}
+.app-sidebar .no-data {
+  text-align: center;
+}
+
+.app-main-section {
+  flex: 2 0 0;
+  margin: 10px;
+  padding: 10px;
+  max-width: 500px;
+}
+
+.app-main-section canvas {
+  background-color: white;
+}
+
+.app-sidebar span {
+  width: 80px;
+  padding-right: 20px;
+  text-align: right;
+  display: inline-block;
+}
+.app-sidebar input {
+  font-size: 1em;
+  width: 130px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.app-sidebar .actions .error-message {
+  font: small;
+  display: block;
+}
+
+.app-sidebar .rectangle-list span {
+  white-space: nowrap;
+  width: 120px;
+  padding-right: 40px;
+}
+.app-sidebar .rectangle-list ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+  text-align: right;
+}
+
+.app-sidebar .no-data span {
+  padding: 0 0 20px 0;
+  width: inherit;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.app-sidebar h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+section {
+  border-radius: 6px;
+  background-color: #191e23;
+  color: white;
+  padding: 5px 10px;
+}
+
+
+  .app-sidebar section {
+    margin-top: 10px;
+  }
+
+.app-sidebar form button {
+  background: #64a932;
+  border: 5px solid #64a932;
+  border-radius: 3px;
+  color: #fffcfe;
+  font-size: 16px;
+  width: 100%;
+  padding: 8px;
+}
+
+.app-sidebar form button:disabled {
+  background: #385027;
+  border-color: #385027;
+  color: #0a1d0d;
+}
+
+.app-sidebar .rectangle-list button {
+  border-color: #191e23;
+  background-color: #191e23;
+  color: white;
+}

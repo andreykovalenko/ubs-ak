@@ -1,0 +1,9 @@
+  @media print {
+    .app-sidebar {
+      display: none;
+    }
+    html {
+       filter: invert(1);
+    }
+
+  }
