@@ -1,21 +1,15 @@
-import React, {Component} from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { remove } from "../redux/rectangles/actions";
 import RectangleItem from "./rectangle-item";
 
-class RectangleList extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    const {rectangles, remove} = this.props;
+function RectangleList({rectangles, remove}) {
     return <section className={`rectangle-list ${rectangles.length === 0 ? "no-data" : ""}`}>
         <h2>Rectangles</h2>
         {rectangles.length > 0 ? <ul>
             {rectangles.map(renderRectangleItem(remove))}
           </ul> : <span> not saved </span>}
       </section>;
-  }
 }
 
 function renderRectangleItem(remove) {
